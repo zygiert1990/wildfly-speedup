@@ -21,6 +21,14 @@ public class UserDTO {
         return name;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" + "id=" + id + ", name=" + name + '}';
