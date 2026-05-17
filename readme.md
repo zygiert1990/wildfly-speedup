@@ -62,3 +62,9 @@ curl -X POST http://localhost:8080/api/users \
 ```bash
 curl http://localhost:8080/api/users/<UUID>
 ```
+
+## Override JAVA_OPTS
+
+```bash
+JAVA_OPTS="$JAVA_OPTS -XX:AOTCache=cache.aot" /root/wildfly-39.0.1.Final/bin/standalone.sh
+```
