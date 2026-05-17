@@ -48,6 +48,13 @@ cp wildfly-speedup/target/wildfly-speedup-1.0-SNAPSHOT.war /root/wildfly-39.0.1.
 
 ## Test
 
+1. Fetch All Users
 ```bash
 curl http://localhost:8080/api/users
+```
+2. Create User
+```bash
+curl -X POST http://localhost:8080/api/users \
+     -H "Content-Type: application/json" \
+     -d '{"name": "John Doe"}'
 ```
