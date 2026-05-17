@@ -58,3 +58,7 @@ curl -X POST http://localhost:8080/api/users \
      -H "Content-Type: application/json" \
      -d '{"name": "John Doe"}'
 ```
+3. Fetch User by ID
+```bash
+curl http://localhost:8080/api/users/<UUID>
+```
